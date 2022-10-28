@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: .2s;
+    appearance: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #21252a;
+    font-size: 17px;
+    color: #fff;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+#nav-mobile {
+    display: none;
+}
+
+.home-social {
+    margin-top: 1.5rem;
+}
+
+.home-social-icon {
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: white;
+    border-radius: 100%;
+    position: relative;
+    transition: all 0.25s linear;
+}
+
+.home-social-icon:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.home-social-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toast--success {
+    border-color: #47d864;
+}
+
+.toast--success .toast__icon {
+    color: #47d864;
+}
+.home-social-icon:hover {
+    transform: scale(1.2);
+}
+table, table th, table td {
+    border-collapse: collapse;
+}
+#more {
+    cursor: pointer;
+}
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #272b2f;
+    border-radius: 2px;
+    padding: 5px 0;
+    min-width: 400px;
+    max-width: 450px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    transition: all linear 0.3s;
+}
+.toast__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.toast__msg {
+    font-size: 14px;
+    color: #eee;
+    margin-top: 6px;
+    line-height: 1.3;
+}
+@media screen and (min-width: 1270px){
+    
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    height: 10rem;
+    background-color: #3b3f44;
+    border: 3px solid #21252a;
+    border-radius: 6px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #21252a;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.main {
+    width: 1270px;
+    margin: auto;
+    background-color: #21252a;
+}
+
+.num-box-map {
+    margin-top:0 !important; border-top-right-radius:0 !important;border-top-left-radius:0 !important
+}
+a {
+    color: #fff;
+    transition: .3s;
+}
+
+a:hover {
+    color: #fd5e53;
+    transition: .3s;
+}
+
+.pd {
+    padding: 30px;
+}
+
+.font-h {
+    font-size: 22px;
+    word-spacing: 3px;
+}
+
+.font-w {
+    font-weight: 600;
+}
+
+.text {
+    color: #b2b3b4;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    background-color: #272b2f;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 3%);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+nav img {
+    width: 35px;
+}
+/* #nav-mobile {
+    display: none;
+} */
+
+nav #logo {
+    display: flex;
+    align-items: center;
+    margin-right: calc(100% - 45%);
+}
+
+nav #logo-text>#red {
+    color: #fd5e53;
+}
+
+nav #logo-text {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+/* .bars {
+    display: none;
+} */
+nav li {
+    list-style-type: none;
+    color: #fff;
+    margin-left: 15px;
+    float: right;
+}
+
+/* Dashboard */
+.dashboard {
+    position: relative;
+}
+
+.dashboard h1 {
+    position: absolute;
+}
+
+.dashboard #update {
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+
+.box {
+    background-color: #272b2f;
+    border-radius: 24px;
+    padding: 30px;
+}
+
+.box1 {
+    margin-top: 100px;
+}
+
+.box1 .row {
+    display: inline-block;
+    width: calc((100% / 5) - 3px);
+    padding: 20px;
+    height: 150px;
+}
+
+.box1 .row:not(#cases) {
+    border-left: 1px dashed #3b3f44;
+}
+
+.box1 .row>span {
+    display: flex;
+    line-height: 1.4;
+}
+
+.box1 .row .row-r {
+    float: right;
+    margin-top: -42px;
+}
+
+.box1 .row .row-r.num {
+    margin-top: -46.5px;
+}
+
+.big-num {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.box1 #cases .num {
+    color: #21bf73;
+}
+
+.now, .new {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 13px;
+}
+
+.box1 #deaths .num {
+    color: #f84435;
+}
+
+.box1 #recovered .num {
+    color: #0779e4;
+}
+
+.box1 #first-vacxin .num {
+    color: #05dfd7;
+}
+
+.box1 #second-vacxin .num {
+    color: #feb72b;
+}
+
+.box2 {
+    padding: 30px;
+}
+
+.box2 .new {
+    background: #24282c;
+    border-radius: 15px;
+    padding: 25px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box2 .title {
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 23px;
+    color: #fff;
+    padding-right: 100px;
+    word-spacing: 2px;
+}
+
+.box2 img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.box2 .content {
+    margin-top: 0;
+    text-align: justify;
+    margin-left: 25px;
+    padding-right: 100px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes modal {
+    0% {
+        transform: translateY(-140px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background: #fff;
+    width: 80vw;
+    max-width: 1200px;
+    height: 80vh;
+    border-radius: 15px;
+    animation: modal ease .6s;
+}
+.toast--success {
+    border-color: #47d864;
+}
+
+.toast--success .toast__icon {
+    color: #47d864;
+}
+.modal-container iframe {
+    width: 100%;
+    height: 73.5vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+}
+
+.modal-container button {
+    font-size: 18px;
+    font-weight: 700;
+    float: right;
+    padding: 15px 15px 10px;
+    border: none;
+    transition: 0.2s;
+    border-top-right-radius: 15px;
+    color: #b2b3b4;
+}
+
+.modal-container button {
+    background: #fd5e53;
+    color: #fff;
+    transition: 0.2s;
+}
+
+#gioi-thieu {
+    padding: 50px 70px;
+}
+.map {
+    height: 620px; 
+    padding-top: 50px;
+    padding-bottom: 0;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}
+
+}
+@media (prefers-color-scheme: light) {
+    html, body, .main {
+        background-color: #e4eaff;
+    }
+
+    nav, .box {
+        background-color: #fff;
+    }
+
+    .contact-form input:not([type=submit]) {
+        background-color: #fff;
+        border: #ddd 1px solid !important;
+        outline: #ddd;
+        color: #21252a;
+    }
+    .toast {
+        background-color: #fff;
+    }
+    .toast__title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+    }
+    .bars {
+        fill: #000;
+    }
+    #nav-mobile {
+        background-color: #fff !important;
+    }
+    .toast__msg {
+        font-size: 14px;
+        color: #888;
+        margin-top: 6px;
+        line-height: 1.3;
+    }
+    .toast--success {
+        border-color: #47d864 !important;
+    }
+    
+    .toast--success .toast__icon {
+        color: #47d864 !important;
+    }
+    nav li, #logo-text, div {
+        color: #24282c !important;
+    }
+
+    a {
+        color: #24282c;
+    }
+
+    .row:not(#cases) {
+        border-left: #eee dashed 1px !important;
+    }
+
+    #search {
+        background-color: #eee !important;
+        color: #000;
+    }
+
+    #title-coutry, h1, h3, p, table, #update {
+        color: #24282c !important;
+    }
+
+    .text {
+        color: #24282c;
+    }
+
+    .box2 .new {
+        background: #fff;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        height: 10rem;
+        background-color: #bbb;
+        border: 3px solid #e4eaff;
+        border-radius: 6px;
+    }
+
+    html::-webkit-scrollbar-track, html::-webkit-scrollbar-corner {
+        background-color: #e4eaff;
+    }  
+
+ }
